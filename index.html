@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="row justify-content-center mt-5">
+        <div class="col-sm-9">
+            <div class="row">
+                    <div class="col">
+                        <div class="graph-area h-100">
+                            <svg width="100%" height="250" class="man">
+                                <line x1="50" y1="230" x2="100" y2="230" />
+                                <line x1="75" y1="230" x2="75" y2="50" />
+                                <line x1="75" y1="50" x2="150" y2="50" />
+                                <line x1="75" y1="50" x2="150" y2="50" />
+                                <line x1="150" y1="50" x2="150" y2="80" class="man-item" />
+                                <circle cx="150" cy="95" r="15" class="man-item" />
+                                <line x1="150" y1="110" x2="150" y2="170" class="man-item" />
+                                <line x1="150" y1="130" x2="170" y2="150" class="man-item" />
+                                <line x1="150" y1="130" x2="130" y2="150" class="man-item" />
+                                <line x1="150" y1="170" x2="130" y2="200" class="man-item" />
+                                <line x1="150" y1="170" x2="170" y2="200" class="man-item" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="result-area d-flex flex-column flex-wrap h-100">
+                            <div class="question flex-fill"></div>
+                            <div class="secret flex-fill"></div>
+                            <div class="info d-flex">
+                                <div id="correct-answer" class="flex-fill"></div>
+                                <div id="wrong-answer" class="flex-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+            <div class="row justify-content-center mt-5">
+                <div class="col-sm-12">
+                    <div id="alphabet" class="d-flex justify-content-center flex-wrap">
+                        <span>A</span>
+                        <span>B</span>
+                        <span>C</span>
+                        <span>Ç</span>
+                        <span>D</span>
+                        <span>E</span>
+                        <span>F</span>
+                        <span>G</span>
+                        <span>Ğ</span>
+                        <span>H</span>
+                        <span>I</span>
+                        <span>İ</span>
+                        <span>J</span>
+                        <span>K</span>
+                        <span>L</span>
+                        <span>M</span>
+                        <span>N</span>
+                        <span>O</span>
+                        <span>Ö</span>
+                        <span>P</span>
+                        <span>R</span>
+                        <span>S</span>
+                        <span>Ş</span>
+                        <span>T</span>
+                        <span>U</span>
+                        <span>Ü</span>
+                        <span>V</span>
+                        <span>Y</span>
+                        <span>Z</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<div class="popup-container">
+    <input type="checkbox" id="popup">
+    <div class="popup">
+        <div class="inner">
+            <p class="message"></p>
+            <button class="btn btn-sm btn-success" id="restart">Yeniden Başlat</button>
+        </div>
+    </div>
+</div>
+
+    <script src="script.js" type="module"></script>
+</body>
+
+</html>
